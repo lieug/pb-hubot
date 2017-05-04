@@ -80,7 +80,7 @@ nconf.defaults options
 
 module.exports = (robot) ->
 
-  robot.respond /[,\s]+(.*)/i, (msg) ->
+  robot.respond /(.*)/i, (msg) ->
     user = msg.message.user.name
     query = msg.match[1]
 
